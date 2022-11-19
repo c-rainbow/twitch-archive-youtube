@@ -19,8 +19,8 @@ main.py [-h] -c CHANNEL -s STREAM_KEY
 3. https://youtube.com/livestreaming 에서 대시보드 가기
 4. "새 스트림 키 만들기" 클릭
 5. 새 스트림 키 설정
-  a. **Name**: 유튜브 방송에 쓰일 제목. 나중에 수정 가능함
-  b. **Streaming Protocol**: 꼭 "HLS" 여야 함
+   a. **Name**: 유튜브 방송에 쓰일 제목. 나중에 수정 가능함
+   b. **Streaming Protocol**: 꼭 "HLS" 여야 함
 6. 스트림키를 스크립트 실행 시에 사용하기 위해 복사
 
 

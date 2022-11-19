@@ -19,8 +19,8 @@ Pleaes note that it can take 24 hours to enable livestream in Youtube.
 3. Go to the dashboard in https://youtube.com/livestreaming 
 4. Click the stream key dropdown, and click "Create a new stream key"
 5. Configure the new stream key
-  a. **Name**: any name you want. It will be the default stream name.
-  b. **Streaming Protocol**: must be "HLS"
+   a. **Name**: any name you want. It will be the default stream name.
+   b. **Streaming Protocol**: must be "HLS"
 6. Copy "Stream key" to use later
 
 
