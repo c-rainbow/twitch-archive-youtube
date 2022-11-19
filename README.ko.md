@@ -8,8 +8,10 @@ English README can be found [here](README.md).
 # 사용법
 ```plaintext
 main.py [-h] -c CHANNEL -s STREAM_KEY
-  -c / --channel       트위치 채널 영어 이름
-  -s / --stream-key    유튜브 라이브스트림 준비하기 섹션의 #6번 단계에서 복사한 "OOOO-OOOO-OOOO-OOOO" 형식의 스트림키
+  -c CHANNEL, --channel CHANNEL       
+                        트위치 채널 영어 이름
+  -s STREAM_KEY, --stream-key STREAM_KEY
+                        유튜브 라이브스트림 준비하기 섹션의 #6번 단계에서 복사한 "OOOO-OOOO-OOOO-OOOO" 형식의 스트림키
 ```
 
 # 유튜브 라이브스트림 준비하기
@@ -19,8 +21,8 @@ main.py [-h] -c CHANNEL -s STREAM_KEY
 3. https://youtube.com/livestreaming 에서 대시보드 가기
 4. "새 스트림 키 만들기" 클릭
 5. 새 스트림 키 설정
-   a. **Name**: 유튜브 방송에 쓰일 제목. 나중에 수정 가능함
-   b. **Streaming Protocol**: 꼭 "HLS" 여야 함
+    a. **Name**: 유튜브 방송에 쓰일 제목. 나중에 수정 가능함
+    b. **Streaming Protocol**: 꼭 "HLS" 여야 함
 6. 스트림키를 스크립트 실행 시에 사용하기 위해 복사
 
 
@@ -31,3 +33,5 @@ main.py [-h] -c CHANNEL -s STREAM_KEY
 HLS는 (1) .m3u8 플레이리스트 와 (2) .ts 세그먼트 두 종류 파일로 이루어져 있습니다. 스크립트는 트위치에서 플레이리스트와 세그먼트를 다운받고, 유튜브용 플레이리스트를 만든 후 세그먼트 파일과 함께 업로드합니다.
 ## 재인코딩 없음 (FFMPEG 사용 안함)
 트위치와 유튜브가 둘 다 HLS를 사용하기 때문에 별다른 인코딩 없이 유튜브에 그대로 세그먼트 파일을 업로드합니다. 따라서 CPU의 성능이 중요하지는 않습니다.
+## Python 버전
+이 코드는 Python 3.9에서 테스트하였습니다.
