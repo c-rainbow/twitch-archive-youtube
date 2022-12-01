@@ -63,7 +63,7 @@ class LivestreamRelay:
             continue
           processed_segment_uris.add(segment.uri)
           
-          if 'Amazon' in segment.title:  # Skip ads
+          if '|' in segment.title:  # Skip ads
             print('Skipping ads..')
             continue
 
